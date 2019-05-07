@@ -139,7 +139,7 @@ class PFRunQuery extends IncludableSpecialPage {
 END;
 			$fullFormText .= Html::hidden( 'pfRunQueryFormName', $form_name );
 			// Set 'title' as hidden field, in case there's no URL niceness.
-			$fullFormText .= Html::hidden( 'title', PFUtils::titleURLString( $realTitle ) );
+			$fullFormText .= Html::hidden( 'title', PFUtils::titleString( $realTitle ) );
 			$fullFormText .= $form_text;
 		}
 
